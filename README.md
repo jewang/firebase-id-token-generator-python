@@ -1,4 +1,4 @@
-# Firebase Token Generator - Python
+# Firebase ID Token Generator - Python
 Python script for generating [Firebase ID and refresh tokens](https://firebase.google.com/docs/auth/users#auth_tokens) 
 from a user ID (UID). Useful for testing & debugging. 
 
