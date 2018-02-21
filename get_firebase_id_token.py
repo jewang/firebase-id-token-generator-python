@@ -1,5 +1,3 @@
-# This Python script
-
 import argparse
 import json
 import urllib2
