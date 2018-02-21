@@ -49,7 +49,7 @@ def get_token(uid):
 
 
 if __name__ == "__main__":
-  parser = argparse.ArgumentParser(description="Generate Firebase ID tokens "
+  parser = argparse.ArgumentParser(description="Generate a Firebase ID token "
                                                "from a user id (UID).")
   parser.add_argument("uid", help="Firebase User ID (UID)", type=str)
   args = parser.parse_args()

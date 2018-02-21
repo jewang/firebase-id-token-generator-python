@@ -1,7 +1,6 @@
-# get-firebase-id-token
-Python script for getting [Firebase ID and refresh tokens](https://firebase.google.com/docs/auth/users#auth_tokens) 
-from a user 
-ID (UID). Useful for testing & debugging. 
+# Firebase Token Generator - Python
+Python script for generating [Firebase ID and refresh tokens](https://firebase.google.com/docs/auth/users#auth_tokens) 
+from a user ID (UID). Useful for testing & debugging. 
 
 ID tokens last for 1 hour (set by Firebase).
 
@@ -14,14 +13,14 @@ $ pip install --user python_firebase`
 ## Usage
 As an import (returns a dict):
 ```python
-import get_firebase_id_token
+import firebase_token_generator
 
 uid = "Firebase user id"
-print get_firebase_id_token.get_token(uid)
+print firebase_token_generator.get_token(uid)
 
 ```
 
 Command line (prints only the ID token):
 ```commandline
-$ python get_firebase_id_token.py <UID>
+$ python firebase_token_generator.py <UID>
 ```
