@@ -32,7 +32,6 @@ def get_token(uid):
     The actual token is at get_token(uid)["idToken"].
     """
     token = auth.create_custom_token(uid)
-    print(token.decode())
     data = {
         'token': token.decode(),
         'returnSecureToken': True
