@@ -41,8 +41,9 @@ def get_token(uid):
         "/verifyCustomToken?key={}".format(API_KEY)
 
     response = requests.post(url, json=data, headers={'Content-Type': 'application/json'})
+    response.raise_for_status()
 
-    return json.loads(response.text)
+    return response.json()['idToken']
 
 
 if __name__ == "__main__":
