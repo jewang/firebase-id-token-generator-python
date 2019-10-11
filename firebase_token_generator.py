@@ -37,8 +37,7 @@ def get_token(uid):
     'returnSecureToken': True
   }
 
-  url = "https://www.googleapis.com/identitytoolkit/v3/relyingparty" \
-        "/verifyCustomToken?key={}".format(API_KEY)
+  url = "https://identitytoolkit.googleapis.com/v1/accounts:signInWithCustomToken?key={}".format(API_KEY)
 
   req = urllib2.Request(url,
                         json.dumps(data),
