@@ -6,9 +6,13 @@ ID tokens last for 1 hour (set by Firebase).
 
 ## Setup
 
-1. Install [firebase_admin](https://firebase.google.com/docs/admin/setup#add_the_sdk): `
-$ pip install --user python_firebase`
-2. Fill out the configuration constants in get_firebase_id_token.py
+1. Install [firebase_admin](https://firebase.google.com/docs/admin/setup#add_the_sdk) and all necessary packages: `
+$ pip install --user -r requiremets.txt`
+2. Generate Firebase Private Key
+`Firebase Console > Settings > Service Accounts > Generate New Private key`
+and store in in current directory and rename it to `key.json`
+3. Create .env file in current directory and fill out
+`WEB_API_KEY` from `Firebase Console > Settings > General > Web API Key` and `PROJECT_ID`
 
 ## Usage
 As an import (returns a dict):

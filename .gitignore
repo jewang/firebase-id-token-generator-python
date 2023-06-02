@@ -102,3 +102,6 @@ ENV/
 
 # PyCharm
 .idea/
+
+# Firebase Service Account key
+key.json
